@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Catch game</title>
+
+	<script src="js/phaser.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyB79T56WS_xiVMTkDsRJryjxiDel1oPtjY",
+			authDomain: "catchgame-4d7fb.firebaseapp.com",
+			databaseURL: "https://catchgame-4d7fb.firebaseio.com",
+			projectId: "catchgame-4d7fb",
+			storageBucket: "",
+			messagingSenderId: "860654050370"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="js/BootScene.js"></script>
+	<script src="js/LoadingScene.js"></script>
+	<script src="js/LevelScene.js"></script>
+	<script src="js/Player.js"></script>
+	<script src="js/Meteoroid.js"></script>
+	<script src="js/Ship.js"></script>
+	<script src="js/Spawner.js"></script>
+	<script src="js/LogIn.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
