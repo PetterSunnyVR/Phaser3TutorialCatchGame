@@ -6,6 +6,7 @@ class LogInInput extends Phaser.GameObjects.Sprite {
         this.setInteractive();
         //add text object to our scene
         this.player_input_text = this.scene.add.text(this.x - this.width / 2 + 10, this.y - this.height / 2 + 7, "", { fontSize: '30px', fill: '#000' });
+        this.scene.menuGroup.push(this.player_input_text);
         //add the textfield to he menuGroup
         //add functionality on click
         this.on('pointerdown', (pointer) => {
